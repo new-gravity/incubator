@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apply · New Gravity Incubator</title>
+  <meta name="description" content="Apply to the New Gravity Incubator. Applications close January 15, 2027.">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="deadline-bar">
+    <div class="container">
+      <span>Applications close <strong>January 15, 2027</strong>.</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="New Gravity Incubator home">
+        <picture>
+          <source srcset="assets/logo-white.png" media="(prefers-color-scheme: dark)">
+          <img src="assets/logo.png" alt="New Gravity" width="83" height="40">
+        </picture>
+        <span class="brand-tag">Incubator</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="apply.html" aria-current="page">Apply</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container narrow">
+
+      <div class="page-head">
+        <h1>Apply</h1>
+        <p class="lede muted">Applications will be accepted until January 15, 2027. See the <a href="faq.html">FAQ</a> for more information, and contact <a href="mailto:incubator@newgravity.center">incubator@newgravity.center</a> with questions.</p>
+        <div class="deadline-callout">
+          <span class="deadline-label">Deadline</span>
+          <span class="deadline-date">January 15, 2027</span>
+        </div>
+      </div>
+
+      <!--
+        APPLICATION FORM (Airtable)
+        The form lives in Airtable: edit its questions there and this page updates on its own.
+        To change how tall the form box is, edit .form-embed iframe in assets/style.css.
+      -->
+      <div class="form-embed">
+        <iframe src="https://airtable.com/embed/appCzG2dmQzqoENnn/pagvOHYfIhwAUKv8a/form" title="New Gravity Incubator application form"></iframe>
+      </div>
+      <p class="form-embed-fallback muted">Trouble seeing the form? <a href="https://airtable.com/appCzG2dmQzqoENnn/pagvOHYfIhwAUKv8a/form" target="_blank" rel="noopener">Open it in a new tab</a>.</p>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span data-year>2026</span> New Gravity</span>
+      <span>Questions? Contact <a href="mailto:incubator@newgravity.center">incubator@newgravity.center</a></span>
+    </div>
+  </footer>
+
+  <script>document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date().getFullYear());</script>
+</body>
+</html>

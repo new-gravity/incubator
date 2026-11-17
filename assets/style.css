@@ -128,6 +128,11 @@ a:hover { color: var(--accent-hover); }
   border-radius: 4px;
 }
 
+.hero :focus-visible,
+.cta :focus-visible {
+  outline-color: var(--blue);
+}
+
 .container {
   max-width: var(--max);
   margin: 0 auto;
